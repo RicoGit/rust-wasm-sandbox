@@ -1,0 +1,21 @@
+[package]
+name = "rust-wasm-sandbox"
+version = "0.1.0"
+authors = ["Constantine Solovev <constantine.solovev@gmail.com>"]
+edition = "2018"
+publish = false
+
+[profile.release]
+
+opt-level = 3
+lto = true
+
+[lib]
+
+name = "rust_wasm_sandbox"
+crate-type = ["cdylib"]
+
+[dependencies]
+
+fluence_sdk = "0.0.4"
+
