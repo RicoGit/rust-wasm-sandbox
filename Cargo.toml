@@ -7,7 +7,8 @@ publish = false
 
 [profile.release]
 
-#opt-level = 3
+debug=false
+opt-level = "z"
 lto = true
 
 [lib]
@@ -17,6 +18,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 
-fluence_sdk = "0.0.4"
-rand = "0.5.0"
 
+fluence_sdk = { version = "0.0.6", features = ["wasm_logger"] }
+log = "0.4"
+rand = "0.5.0"

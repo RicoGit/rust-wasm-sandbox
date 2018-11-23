@@ -13,4 +13,5 @@
     
 ### Runs with [Asmble Vm](https://github.com/cretz/asmble)
     
-    asmble invoke -res -in target/wasm32-unknown-unknown/release/rust_wasm_sandbox.wasm test -log info -defmaxmempages 32
+    asmble invoke -res -in target/wasm32-unknown-unknown/release/rust_wasm_sandbox.wasm test \
+    -log info -defmaxmempages 32 -loggermempages 1
